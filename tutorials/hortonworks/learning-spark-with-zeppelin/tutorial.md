@@ -3,7 +3,7 @@ layout: tutorial
 title: Learning Spark with Zeppelin
 tutorial-id: 365
 tutorial-series: Spark
-tutorial-version: hdp-2.5.0
+tutorial-version: hdp-2.6.0
 intro-page: true
 components: [ spark, zeppelin ]
 ---

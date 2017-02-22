@@ -3,22 +3,31 @@ layout: tutorial
 title: A Hands-On Tour of Apache Spark in 5 Minutes
 tutorial-id: 360
 tutorial-series: Spark
-tutorial-version: hdp-2.5.0
+tutorial-version: hdp-2.6.0
 intro-page: true
 components: [ spark, zeppelin ]
 ---
 
 Apache Spark is a fast, in-memory data processing engine with elegant and expressive development APIs in Scala, Java, Python, and R that allow data workers to efficiently execute machine learning algorithms that require fast iterative access to datasets (see [Spark API Documentation](http://spark.apache.org/docs/latest/api.html) for more info). Spark on [Apache Hadoop YARN](http://hortonworks.com/hadoop/YARN "Apache Hadoop YARN") enables deep integration with Hadoop and other YARN enabled workloads in the enterprise.
 
-In this tutorial, we will introduce the basic concepts of Apache Spark and the first few necessary steps to get started with Spark using an Apache Zeppelin Notebook on a Hortonworks Data Platform (HDP) Sandbox.
+In this tutorial, we will introduce a film series dataset from the [Silicon Valley Comedy TV show](http://www.imdb.com/title/tt2575988/) and perform some basic operations using Spark in an Apache Zeppelin notebook.
 
 ### Prerequisites
 
-This tutorial is a part of series of hands-on tutorials to get you started with HDP using Hortonworks sandbox. Please ensure you complete the prerequisites before proceeding with this tutorial.
+This tutorial is a part of series of hands-on tutorials to get you started with Hortonworks Data Platform (HDP) using either the Hortonworks Data Cloud (HDCloud) or a pre-configured downloadable HDP Sandbox. Please review the following prerequisites before proceeding.
 
-*   Download and Install [Hortonworks Sandbox 2.5](http://hortonworks.com/products/sandbox/)
-*   Review [Learning the Ropes of the Hortonworks Sandbox](http://hortonworks.com/hadoop-tutorial/learning-the-ropes-of-the-hortonworks-sandbox/)
-*   Review [Getting Started with Apache Zeppelin](https://github.com/hortonworks/tutorials/blob/hdp-2.5/tutorials/hortonworks/getting-started-with-apache-zeppelin/tutorial.md)
+Choose one of the following deployment options:
+
+1a. [Setup and Launch a cluster on Hortonworks Data Cloud on AWS](http://hortonworks.github.io/hdp-aws/launch/index.html)
+
+1b. Cluster Type: Data Science (TODO: )
+
+or
+
+2a. Download and Install [Hortonworks Sandbox 2.6](http://hortonworks.com/products/sandbox/)
+2b. Review [Learning the Ropes of the Hortonworks Sandbox](http://hortonworks.com/hadoop-tutorial/learning-the-ropes-of-the-hortonworks-sandbox/)
+
+Also, if you are new to Zeppelin, review the following tutorial [Getting Started with Apache Zeppelin](https://github.com/hortonworks/tutorials/blob/hdp-2.5/tutorials/hortonworks/getting-started-with-apache-zeppelin/tutorial.md)
 
 ### Concepts
 
