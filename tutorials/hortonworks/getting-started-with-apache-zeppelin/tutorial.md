@@ -3,7 +3,7 @@ layout: tutorial
 title: Getting Started with Apache Zeppelin
 tutorial-id: 368
 tutorial-series: Zeppelin
-tutorial-version: hdp-2.5.0
+tutorial-version: hdp-2.6.0
 intro-page: true
 components: [ zeppelin, spark ]
 ---
@@ -21,10 +21,24 @@ With a focus on Enterprise, Zeppelin has the following important features:
 
 ### **Prerequisites**
 
-*   HDP 2.5
-*   Spark 1.6.2
+*   HDP 2.5 or later
+*   Spark 1.6.2 or later
 
 ### **Launching Zeppelin**
+
+How you launch Zeppelin differs depending on whether you are using a Hortonworks Data Cloud (HDCloud) or a Hortonworks Data Platform (HDP) Sandbox. We cover both cases below.
+
+#### Case 1: Launching Zeppelin from HDCloud
+
+If you're in the Cluster home view, then select your *Data Science* cluster and click the `CLUSTERS UIs` -> `Zeppelin UI` button.
+
+![](https://raw.github.com/hortonworks/tutorials/hdp-2.6/assets/getting-started-with-apache-zeppelin/cluster-home-screen-launch-zeppelin3.jpg)
+
+If you're in the Cluster detail, then click the `Zeppelin UI` button directly.
+
+![](https://raw.github.com/hortonworks/tutorials/hdp-2.6/assets/getting-started-with-apache-zeppelin/expanded-view-launch-zeppelin.jpg)
+
+#### Case 2: Launching Zeppelin from HDP Sandbox
 
 If you haven't already, login to Ambari (operations console) using `maria_dev`/`maria_dev` as a username/password combination. Remember that Ambari is accessible on port 8080.
 
@@ -32,15 +46,15 @@ E.g. on a VirtualBox Sandbox, Ambari would be accessible at http://127.0.0.1:808
 
 Note: If you're new to the HDP Sandbox environment, make sure to review [Learning the Ropes of the Hortonworks Sandbox](http://hortonworks.com/hadoop-tutorial/learning-the-ropes-of-the-hortonworks-sandbox/).
 
-![scr1-login](https://raw.github.com/hortonworks/tutorials/hdp-2.5/assets/getting-started-with-apache-zeppelin/scr1-login.png)
+![scr1-login](https://raw.github.com/hortonworks/tutorials/hdp-2.6/assets/getting-started-with-apache-zeppelin/scr1-login.png)
 
 Okay, once you're in Ambari just click the Views dropdown (upper-right corner) and select Zeppelin.
 
-![scr2-views](https://raw.github.com/hortonworks/tutorials/hdp-2.5/assets/getting-started-with-apache-zeppelin/scr2-views.png)
+![scr2-views](https://raw.github.com/hortonworks/tutorials/hdp-2.6/assets/getting-started-with-apache-zeppelin/scr2-views.png)
 
 Voila, you should see default Zeppelin menu with a list of demos and labs that you can run to explore great examples to get you quickly up and running.
 
-![scr3-zeppelin-main](https://raw.github.com/hortonworks/tutorials/hdp-2.5/assets/getting-started-with-apache-zeppelin/scr3-zeppelin-main.png)
+![scr3-zeppelin-main](https://raw.github.com/hortonworks/tutorials/hdp-2.6/assets/getting-started-with-apache-zeppelin/scr3-zeppelin-main.png)
 
 Now let's create your first notebook.
 
@@ -50,9 +64,9 @@ To create a notebook:
 
 1. Under the “Notebook” tab, choose **+Create new note**.
 
-2.  You will see the following window. Type a name for the new note (or accept the default): <br><br>![scr9-create-notebook](https://raw.github.com/hortonworks/tutorials/hdp-2.5/assets/getting-started-with-apache-zeppelin/scr9-create-notebook.png)
+2.  You will see the following window. Type a name for the new note (or accept the default): <br><br>![scr9-create-notebook](https://raw.github.com/hortonworks/tutorials/hdp-2.6/assets/getting-started-with-apache-zeppelin/scr9-create-notebook.png)
 
-3.  Type sc.version into a paragraph in the note, and click the “Play” button (blue triangle): <br><br>![scr10-check-spark-version](https://raw.github.com/hortonworks/tutorials/hdp-2.5/assets/getting-started-with-apache-zeppelin/scr10-check-spark-version.png)<br>
+3.  Type sc.version into a paragraph in the note, and click the “Play” button (blue triangle): <br><br>![scr10-check-spark-version](https://raw.github.com/hortonworks/tutorials/hdp-2.6/assets/getting-started-with-apache-zeppelin/scr10-check-spark-version.png)<br>
 SparkContext, SQLContext, ZeppelinContext will be created automatically. They will be exposed as variable names ‘sc’, ‘sqlContext’ and ‘z’, respectively, in scala and python environments.<br><br>
 **Note:** The first run will take some time, because it is launching a new Spark job to run against YARN. Subsequent paragraphs will run much faster.<br><br>
 
