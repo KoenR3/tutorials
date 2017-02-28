@@ -38,6 +38,10 @@ If you're in the Cluster detail, then click the `Zeppelin UI` button directly.
 
 ![](https://raw.github.com/hortonworks/tutorials/hdp-2.6/assets/getting-started-with-apache-zeppelin/expanded-view-launch-zeppelin.jpg)
 
+Finally, login with your **cluster** *User Name* and *Password* combination.
+
+![](https://raw.github.com/hortonworks/tutorials/hdp-2.6/assets/getting-started-with-apache-zeppelin/login-cloud-zeppelin.jpg)
+
 #### Case 2: Launching Zeppelin from HDP Sandbox
 
 If you haven't already, login to Ambari (operations console) using `maria_dev`/`maria_dev` as a username/password combination. Remember that Ambari is accessible on port 8080.
