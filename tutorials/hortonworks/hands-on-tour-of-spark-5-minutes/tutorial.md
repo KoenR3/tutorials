@@ -22,7 +22,7 @@ To make things fun and interesting, we will introduce a film series dataset from
 
 ### Prerequisites
 
-This tutorial is a part of series of hands-on tutorials to get you started with Hortonworks Data Platform (HDP) using either the [Hortonworks Data Cloud (HDCloud)](https://hortonworks.com/products/cloud/aws/) or a pre-configured downloadable [HDP Sandbox](https://hortonworks.com/products/sandbox/).
+This tutorial is a part of series of hands-on tutorials to get you started with [Hortonworks Data Platform (HDP)](https://hortonworks.com/products/data-center/hdp/) using either the [Hortonworks Data Cloud (HDCloud)](https://hortonworks.com/products/cloud/aws/) or a pre-configured downloadable [HDP Sandbox](https://hortonworks.com/products/sandbox/).
 
 The Zeppelin notebook uses basic Scala and SQL syntax and a Python version is coming soon.
 
