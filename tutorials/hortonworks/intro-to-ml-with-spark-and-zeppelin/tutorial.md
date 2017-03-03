@@ -8,29 +8,54 @@ intro-page: true
 components: [ spark, zeppelin ]
 ---
 
-In this tutorial, we will give you a taste of the powerful Machine Learning libraries in Apache Spark via a hands-on lab.
+![](https://raw.github.com/hortonworks/tutorials/hdp-2.6/assets/intro-to-ml-with-spark-and-zeppelin/spark-mllib-logo.png)
 
-We will also introduce the necessary steps to get you up and running with Apache Zeppelin on a Hortonworks Data Platform (HDP) Sandbox.
+In this tutorial, we will introduce you to Machine Learning with Apache Spark. The hands-on lab for this tutorial is an Apache Zeppelin notebook that has all the steps necessary to ingest and explore data, train, test, visualize, and save a model. We will cover a basic Linear Regression model that will allow us perform simple predictions on a sample data. This model can be further expanded and modified to fit your needs. Most importantly, by the end of this tutorial, you will understand how to create an end-to-end pipeline for setting up and training simple models in Spark.
 
 ### Prerequisites
 
-Please ensure you complete the prerequisites before proceeding with this tutorial.
+This tutorial is a part of series of hands-on tutorials to get you started with [Hortonworks Data Platform (HDP)](https://hortonworks.com/products/data-center/hdp/) using either the [Hortonworks Data Cloud (HDCloud)](https://hortonworks.com/products/cloud/aws/) or a pre-configured downloadable [HDP Sandbox](https://hortonworks.com/products/sandbox/).
 
-There are multiple ways to install and/or launch the HDP Sandbox:
+The Zeppelin notebook uses basic [Scala](http://www.dhgarrette.com/nlpclass/scala/basics.html) syntax. A Python version is coming soon.
 
-*   Download and Install [HDP Hortonworks Sandbox](http://hortonworks.com/products/hortonworks-sandbox/#install)
+To complete this tutorial, choose one of the following deployment options:
 
-or
+#### Option 1: Setup Hortonworks Data Cloud (HDCloud) on AWS
 
-*   Deploy the [HDP Sandbox in the Azure Cloud](http://hortonworks.com/hadoop-tutorial/deploying-hortonworks-sandbox-on-microsoft-azure/). (FREE for the first month.)
+1a. Create an [Amazon Web Services (AWS) Account](https://aws.amazon.com/) if you don't have one
 
+1b. Follow this step-by-step doc to [Setup and Launch a Controller on HDCloud](http://hortonworks.github.io/hdp-aws/launch/index.html)
 
-**Note**: If you're attending a Crash Course or a Meetup, the instructor may have additional information on how to get a HDP Sandbox installed.
+1c. Create a *Data Science* [Cluster](http://hortonworks.github.io/hdp-aws/create/index.html) (use settings listed below)
 
+Select/specify the following for your cluster:
 
-Additional resources to get you started:
+  - HDP Version: HDP 2.6 or later
+  - Cluster Type: "Data Science: Apache Spark 2.1+, Apache Zeppelin 0.6.2+" or later
+  - Worker instance count: one or more
+  - Remote Access: 0.0.0.0/0
 
-*   [Learning the Ropes of the Hortonworks Sandbox](http://hortonworks.com/hadoop-tutorial/learning-the-ropes-of-the-hortonworks-sandbox/)
+Here's a screenshot with sample settings:
+
+![setting-up-hd-cloud](https://raw.github.com/hortonworks/tutorials/hdp-2.6/assets/a-tour-of-spark-in-5-minutes/spinning-up-hdcloud-cluster.jpg)
+
+#### Option 2: Download and Setup Hortonworks Data Platform (HDP) Sandbox
+
+This option is optimal if you prefer to run everything in local environment (laptop/PC).
+
+Keep in mind, that you will need **8GB** of memory dedicated for the virtual machine, meaning that you should have at least **12GB** of memory on your system.
+
+2a. Download and Install [HDP Sandbox 2.6](http://hortonworks.com/products/sandbox/)
+
+2b. Review [Learning the Ropes of HDP Sandbox](http://hortonworks.com/hadoop-tutorial/learning-the-ropes-of-the-hortonworks-sandbox/)
+
+#
+#
+
+Continue here...
+
+#
+#
 
 ### Concepts
 
